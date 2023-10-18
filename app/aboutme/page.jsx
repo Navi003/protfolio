@@ -1,13 +1,26 @@
+"use client";
 import React from "react";
+
 import PageContainer from "../ui/PageContainer";
 import HeadingSecondary from "../ui/HeadingSecondary";
 import Button from "../ui/Button";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import AppLogo from "../ui/AppLogo";
+
+import { HiDocumentArrowDown } from "react-icons/hi2";
 export default function Page() {
   return (
     <PageContainer>
-      <section className="mt-[4.6rem]">
+      <motion.section
+        animate={{
+          opacity: 1,
+        }}
+        initial={{
+          opacity: 0,
+        }}
+        className="mt-[4.6rem]"
+      >
         <div className="flex items-center justify-between mb-[4.6rem]">
           <HeadingSecondary>About Me</HeadingSecondary>
           <Button type="back" href="/">
@@ -56,11 +69,21 @@ export default function Page() {
           <AppLogo src="/images/figma.png" alt="figma logo" />
         </div>
 
-        <div className="flex items-center justify-between p-4 mt-10 border rounded-md border-secondary-70">
-          <div>CV</div>
-          <Button>Download CV</Button>
+        <div className="flex items-center justify-end p-4 mt-10 ">
+          <a
+            className="flex items-center gap-2 px-10 py-3 text-base font-semibold rounded bg-secondary-70 focus:outline-none focus:ring-4 focus:ring-secondary-60"
+            href="/data/Navjot_Dhiman_lebenslauf_2023.pdf"
+            download
+          >
+            Download CV
+            <HiDocumentArrowDown
+              className="w-6 h-6 text-secondary-20 "
+              height={55}
+              width={55}
+            />
+          </a>
         </div>
-      </section>
+      </motion.section>
     </PageContainer>
   );
 }

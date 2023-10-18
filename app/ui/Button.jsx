@@ -1,14 +1,42 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+
 import { VscArrowSmallLeft } from "react-icons/vsc";
-export default function Button({ children, className, href, onClick, type }) {
+
+const base =
+  "text-base font-semibold rounded  focus:outline-none focus:ring-4 focus:ring-secondary-60";
+
+const types = {
+  bigSquare: `flex items-center bg-secondary-70 px-10 py-3   ${base}`,
+  tiny: `px-3 sm:px-2 sm:px-2 sm:text-sm sm:py-2  md:px-3 md:py-2 py-2 rounded-full text-primary-10  ${base}`,
+};
+
+export default function Button({
+  style,
+  children,
+  className,
+  href,
+  onClick,
+  type,
+}) {
+  if (type === "tiny" && href) {
+    return (
+      <Link
+        styles={{ style }}
+        className={`${types.tiny} ${className && className}`}
+        href={href}
+      >
+        {children}
+      </Link>
+    );
+  }
+
   if (type === "back" && href) {
     return (
       <Link
         href={href}
-        className={`px-10 py-3 flex text-base font-semibold rounded bg-secondary-70 focus:outline-none focus:ring-4 focus:ring-secondary-60 items-center ${
-          className && className
-        }`}
+        className={`${types.bigSquare} ${className && className}`}
       >
         <VscArrowSmallLeft width="35" height="35" /> {children}
       </Link>
@@ -19,9 +47,7 @@ export default function Button({ children, className, href, onClick, type }) {
     return (
       <Link
         href={href}
-        className={`px-10 py-3 text-base font-semibold rounded bg-secondary-70 focus:outline-none focus:ring-4 focus:ring-secondary-60 ${
-          className && className
-        }`}
+        className={`${types.bigSquare} ${className && className}`}
       >
         {children}
       </Link>
@@ -31,9 +57,7 @@ export default function Button({ children, className, href, onClick, type }) {
   return (
     <button
       onClick={onClick}
-      className={`px-10 py-3 text-base font-semibold rounded bg-secondary-70  focus:outline-none focus:ring-4 focus:ring-secondary-60 ${
-        className && className
-      }`}
+      className={`justify-center ${types.bigSquare} ${className && className}`}
     >
       {children}
     </button>
