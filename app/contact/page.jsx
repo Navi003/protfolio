@@ -6,7 +6,7 @@ import HeadingSecondary from "../ui/HeadingSecondary";
 import Button from "../ui/Button";
 import { useState } from "react";
 
-import { sendContactForm } from "../sendRequest";
+import sendRequest from "../sendRequest";
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -24,7 +24,15 @@ export default function Page() {
   };
   async function handleSubmit(e) {
     e.preventDefault();
-    await sendContactForm(formData);
+    try {
+      await sendRequest({
+        url: "http://localhost:3000/api/contact",
+        method: "POST",
+        body: JSON.stringify(formData),
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
   return (
     <PageContainer>

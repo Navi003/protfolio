@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 export default function TechStackCard({ stack, name, content, image }) {
   const [blur, setBlur] = useState(false);
@@ -21,7 +21,9 @@ export default function TechStackCard({ stack, name, content, image }) {
             width={35}
             height={35}
             src={!image ? "/images/react-2.svg" : image}
-            className={`w-full h-full  duration-300 ${blur && "custom-rotate"}`}
+            className={`w-full h-full  duration-300 ${
+              !blur && "custom-rotate"
+            }`}
           />
         </div>
         <div>

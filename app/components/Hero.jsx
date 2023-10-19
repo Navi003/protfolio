@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="relative pb-6 sm:pb-6 md:pb-0 bg-base-medium -z-10">
       <div className="xl:w-[1200px] relative mx-auto md:grid-cols-2 md:grid">
-        <div className="justify-center hidden w-full gap-3 mb-5 space-x-2 text-5xl font-bold uppercase md:absolute md:bottom-0 md:flex text-primary-60">
+        <div className="z-50 justify-center hidden w-full gap-3 mb-5 space-x-2 text-5xl font-bold uppercase md:absolute md:bottom-0 md:flex text-primary-60">
           <span className="text-primary-10">Navjot</span>
           <span>Dhiman</span>
         </div>
