@@ -14,7 +14,7 @@ export default function Footer() {
           <ul className="flex flex-col items-center">
             <ListItem href="/">Home</ListItem>
             <ListItem href="/projects">Projects</ListItem>
-            <ListItem href="/resources">Resources</ListItem>
+            <ListItem href="/resources">About Me</ListItem>
             <ListItem href="/contact">Contact</ListItem>
           </ul>
         </div>
@@ -32,11 +32,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col items-center">
-          <h3 className="mb-5 text-lg font-semibold uppercase">Resources</h3>
+          <h3 className="mb-5 text-lg font-semibold uppercase">Terms</h3>
           <ul className="flex flex-col items-center">
             <ListItem href="/">Home</ListItem>
             <ListItem href="/projects">Projects</ListItem>
-            <ListItem href="/resources">Resources</ListItem>
+            <ListItem href="/resources">About Me</ListItem>
             <ListItem href="/contact">Contact</ListItem>
           </ul>
         </div>

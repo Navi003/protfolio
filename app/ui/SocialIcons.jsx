@@ -7,7 +7,7 @@ export default function SocialIcons() {
       <SocalIcon href="/" src="/images/instagram.svg" />
       <SocalIcon href="https://github.com/Navi003" src="/images/github.svg" />
       <SocalIcon
-        href="https://www.linkedin.com/in/navjot-dhiman"
+        href="https://www.linkedin.com/in/navjot-dhiman-0061b41a2/"
         src="/images/linkedin.svg"
       />
       <SocalIcon

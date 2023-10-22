@@ -2,6 +2,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import ToggleDarkMode from "./ui/ToggleDarkMode";
 
 // const inter = Inter({ subsets: ["latin"] });
 

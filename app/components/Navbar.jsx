@@ -5,45 +5,52 @@ import ListItem from "../ui/ListItem";
 import SocalIcon from "../ui/SocalIcon";
 import HamBurger from "../ui/HamBurger";
 import SocialIcons from "../ui/SocialIcons";
+import ToggleDarkMode from "../ui/ToggleDarkMode";
 
 // import { useState } from "react";
 export default function Navbar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
-  function handlwShowMobileNav() {
-    setShowMobileNav((state) => !state);
-  }
+
   return (
-    <nav className="sticky bg-base-dark">
+    <nav className="w-full bg-base-dark">
+      <div className="hidden sm:block">
+        <ToggleDarkMode />
+      </div>
+
       <div className="xl:w-[1200px] xl:mx-auto md:h-[150px] relative  h-[6rem] flex items-center md:justify-between">
         {/* HAMBURGER */}
 
         <div className="flex items-center justify-between w-full md:w-fit">
           <HamBurger
             showMobileNav={showMobileNav}
-            onClick={handlwShowMobileNav}
+            onClick={() => setShowMobileNav((prev) => !prev)}
           />
           {/* SOCIAL ICONS */}
           <SocialIcons />
         </div>
         {/* MOBILE NAVIGATION */}
         <div
-          className={`mt-[25rem] pb-24 pt-16 absolute left-0 flex justify-start pl-24 w-full top-50 bg-base-dark/90 transition-all duration-1000
-          ${!showMobileNav && "translate-y-[-500px]"}`}
+          className={`pb-24 pt-16 absolute left-0 flex justify-start pl-24 w-full top-50 bg-base-dark/90 transition-all duration-1000
+          ${showMobileNav ? "translate-y-[200px]" : "translate-y-[-900px]"}`}
         >
           <ul className="flex flex-col gap-4 mr-8 font-semibold uppercase text-secondary-20 ">
-            <ListItem onClick={handlwShowMobileNav} href="/">
+            <ListItem onClick={() => setShowMobileNav(false)} href="/">
               Home
             </ListItem>
-            <ListItem onClick={handlwShowMobileNav} href="/projects">
+            <ListItem onClick={() => setShowMobileNav(false)} href="/projects">
               Projects
             </ListItem>
-            <ListItem onClick={handlwShowMobileNav} href="/aboutme">
+            <ListItem onClick={() => setShowMobileNav(false)} href="/aboutme">
               About Me
             </ListItem>
-            <ListItem onClick={handlwShowMobileNav} href="/contact">
+            <ListItem onClick={() => setShowMobileNav(false)} href="/contact">
               Contact
             </ListItem>
           </ul>
+
+          <div>
+            <ToggleDarkMode />
+          </div>
         </div>
 
         {/* Desktop navi navigation */}

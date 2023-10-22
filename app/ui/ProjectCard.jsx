@@ -4,12 +4,18 @@ import React from "react";
 import Image from "next/image";
 import Button from "./Button";
 import { motion } from "framer-motion";
-export default function ProjectCard({ image, name }) {
+export default function ProjectCard({
+  image,
+  name,
+  hrefGit,
+  hrefLive,
+  builtWith,
+}) {
   return (
-    <div className=" grid grid-rows-[15rem_auto] rounded-lg overflow-hidden">
-      <div>
+    <div className=" grid grid-rows-[15rem_auto] rounded-lg overflow-hidden projectCard">
+      <div className="p-4 overflow-hidden bg-slate-300">
         <Image
-          className="object-cover w-full h-full "
+          className="object-cover w-full h-full rounded-md cardImage"
           src={image}
           width={200}
           height={120}
@@ -20,15 +26,19 @@ export default function ProjectCard({ image, name }) {
       <div className="flex flex-col gap-2 p-4 bg-secondary-30">
         <div>
           <h4 className="text-lg font-semibold uppercase text-secondary-100 ">
-            Gaming site
+            {name}
           </h4>
-          <p>built with React</p>
+          <p>built with {builtWith}</p>
         </div>
         <div className="space-x-2">
-          <Button href="/" className="bg-primary-60" type="tiny">
+          <Button
+            href={hrefLive || "/"}
+            className="bg-primary-60 focus:ring-primary-40 "
+            type="tiny"
+          >
             Visit Live
           </Button>
-          <Button href="/" className="bg-secondary-60" type="tiny">
+          <Button href={hrefGit || "/"} className="bg-secondary-60" type="tiny">
             Visit git
           </Button>
         </div>

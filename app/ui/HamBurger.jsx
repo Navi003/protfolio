@@ -2,7 +2,10 @@ import React from "react";
 
 export default function HamBurger({ onClick, showMobileNav }) {
   return (
-    <div onClick={onClick} className="ml-6 cursor-pointer md:hidden">
+    <div
+      onClick={onClick}
+      className="relative z-50 ml-6 cursor-pointer md:hidden"
+    >
       <div className="ham">
         <div className={`line ${showMobileNav && "line-1"}`}></div>
         <div className={`line ${showMobileNav && "line-2"}`}></div>

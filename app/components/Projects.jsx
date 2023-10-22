@@ -10,10 +10,22 @@ export default function Projects() {
     <motion.section className="mt-[4.6rem] mb-[4.8rem]">
       <HeadingSecondary>Projects</HeadingSecondary>
 
-      <div className="grid grid-cols-1 gap-3 mt-5 sm:grid-cols-3 xl:grid-cols-4 ">
-        {data.map((project) => (
-          <ProjectCard image={project.image} alt={project.image} />
-        ))}
+      <div className="grid grid-cols-1 gap-3 mt-5 sm:grid-cols-3 xl:grid-cols-2 ">
+        {data
+          .slice(0, 6)
+          .map(
+            ({ builtWith, image, githubLink, projectName, liveSiteLink }) => (
+              <ProjectCard
+                name={projectName}
+                image={image}
+                alt={projectName}
+                key={image}
+                hrefGit={githubLink}
+                hrefLive={liveSiteLink}
+                builtWith={builtWith}
+              />
+            )
+          )}
       </div>
       <div className="flex justify-center w-full mt-10">
         <Button href="/projects" className="text-center bg-primary-60">

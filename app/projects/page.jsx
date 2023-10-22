@@ -3,6 +3,7 @@ import HeadingSecondary from "../ui/HeadingSecondary";
 import ProjectCard from "../ui/ProjectCard";
 import Button from "../ui/Button";
 import PageContainer from "../ui/PageContainer";
+import { data } from "../projectdata/data";
 // import navigation from ".";
 export default function Page() {
   return (
@@ -16,22 +17,19 @@ export default function Page() {
             </Button>
           </div>
           <div className="grid grid-cols-1 gap-3 mt-5 sm:grid-cols-3 md:grid-cols-4 ">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {data.map(
+              ({ builtWith, image, githubLink, projectName, liveSiteLink }) => (
+                <ProjectCard
+                  name={projectName}
+                  image={image}
+                  alt={projectName}
+                  key={image}
+                  hrefGit={githubLink}
+                  hrefLive={liveSiteLink}
+                  builtWith={builtWith}
+                />
+              )
+            )}
           </div>
         </section>
       </PageContainer>

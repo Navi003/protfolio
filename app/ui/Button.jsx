@@ -5,11 +5,11 @@ import React from "react";
 import { VscArrowSmallLeft } from "react-icons/vsc";
 
 const base =
-  "text-base font-semibold rounded  focus:outline-none focus:ring-4 focus:ring-secondary-60";
+  "text-base font-semibold rounded  focus:outline-none focus:ring-4 rounded-sm ";
 
 const types = {
-  bigSquare: `flex items-center bg-secondary-70 px-10 py-3   ${base}`,
-  tiny: `px-3 sm:px-2 sm:px-2 sm:text-sm sm:py-2  md:px-3 md:py-2 py-2 rounded-full text-primary-10  ${base}`,
+  bigSquare: `focus:ring-secondary-60 flex items-center bg-secondary-70 px-10 py-3`,
+  tiny: `px-3 sm:px-2 sm:px-2 focus:ring-secondary-60 sm:text-sm sm:py-2 md:px-3 md:py-2 py-2 rounded-full text-primary-10  ${base}`,
 };
 
 export default function Button({
