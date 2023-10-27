@@ -7,8 +7,11 @@ import Button from "../ui/Button";
 import { useState } from "react";
 
 import sendRequest from "../sendRequest";
+import axios from "axios";
 
 export default function Page() {
+  const [isLaoding, setIsLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -19,19 +22,33 @@ export default function Page() {
   const handleChange = (event) => {
     const { name, value } = event.target;
     const newFormData = { ...formData };
-    newFormData[name] = value; // Dynamic key access Plese add [key: string]: string to your type so it can acces key as string",
+    newFormData[name] = value;
     setFormData(newFormData);
   };
   async function handleSubmit(e) {
     e.preventDefault();
+
+    setIsLoading(false);
+
     try {
-      await sendRequest({
-        url: "http://localhost:3000/api/contact",
-        method: "POST",
-        body: JSON.stringify(formData),
-      });
+      setIsLoading(false);
+
+      // const response = await sendRequest({
+      //   url: "http://localhost:3000/api/contact",
+      //   method: "POST",
+      //   body: JSON.stringify(formData),
+      // });
+
+      const response = axios.post(
+        "http://localhost:3000/api/contact",
+        formData
+      );
+
+      console.log(response);
     } catch (error) {
       console.log(error);
+    } finally {
+      setIsLoading(false);
     }
   }
   return (

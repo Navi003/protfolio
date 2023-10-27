@@ -11,15 +11,13 @@ export const sendContactForm = async (data) => {
 };
 
 const sendRequest = (options = {}) => {
-  const { token } = useUserStore.getState();
-
   let defaultConfig = {
     url: "/",
     method: "get",
     timeout: 10000,
     data: {},
     headers: {
-      Authorization: `Bearer ${token || ""}`,
+      Authorization: `Bearer ${""}`,
     },
     validateStatus: (status) => status >= 200 && status < 500,
   };

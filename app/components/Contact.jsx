@@ -15,7 +15,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="mt-[4.6rem]">
+    <div className="mt-[4.6rem] ">
       <HeadingSecondary>Contact</HeadingSecondary>
 
       <div className="mt-5 md:justify-between md:flex">

@@ -44,6 +44,23 @@
     animation: spin 4s linear infinite; /* Adjust the duration (4s) to control the speed */
   }
 
+  @media screen and (min-width: 769px) {
+    .mobile-navigation {
+      display: none;
+    }
+  }
+
+  .fadeIn {
+    animation: fadeIn 5s;
+  }
+
+  .moveLeft {
+    animation: moveIn 2s;
+  }
+
+  /* .moveRight {
+  } */
+
   @keyframes spin {
     0% {
       transform: rotate(0deg);
@@ -53,12 +70,33 @@
     }
   }
 
-  .cardImage {
-    transition: 300ms all;
+  @keyframes moveIn {
+    0% {
+      transform: translateX(-50%);
+    }
+
+    50% {
+      transform: translateX(20%);
+    }
+    75% {
+      transform: skew(10deg);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
 
   .projectCard:hover .cardImage {
     transform: scale(1.2);
     transition: 300ms all;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

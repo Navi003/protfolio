@@ -8,14 +8,13 @@ export async function POST(req, res) {
     });
   }
 
-  // Parse the request body as JSON
+  console.log(req);
+
   try {
     const requestBody = await req.json();
 
-    // Access the data from the request body
     const { firstName, eMail, message, lastName } = requestBody;
 
-    // Now you can use 'firstName' and 'eMail' in your logic
     console.log("First Name:", firstName);
     console.log("Email:", eMail);
 

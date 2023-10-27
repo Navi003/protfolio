@@ -16,7 +16,7 @@ export default function Page() {
               Go Back
             </Button>
           </div>
-          <div className="grid grid-cols-1 gap-3 mt-5 sm:grid-cols-3 md:grid-cols-4 ">
+          <div className="grid grid-cols-1 gap-3 mt-5 sm:grid-cols-3 xl:grid-cols-2 ">
             {data.map(
               ({ builtWith, image, githubLink, projectName, liveSiteLink }) => (
                 <ProjectCard

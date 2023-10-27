@@ -13,7 +13,9 @@ export default function ListItem({ children, href, onClick }) {
         pathname === href ? "text-secondary-80 font-bold " : ""
       }`}
     >
-      <Link href={href}>{children}</Link>
+      <Link s href={href}>
+        {children}
+      </Link>
     </li>
   );
 }
