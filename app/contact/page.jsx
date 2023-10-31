@@ -35,10 +35,7 @@ export default function Page() {
     try {
       setIsLoading(false);
 
-      const response = await axios.post(
-        "http://localhost:3000/api/contact",
-        formData
-      );
+      const response = await axios.post("/api/contact", formData);
       if (response.status === 200) {
         setStatus("success");
       }
