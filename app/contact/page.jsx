@@ -6,14 +6,13 @@ import HeadingSecondary from "../ui/HeadingSecondary";
 import Button from "../ui/Button";
 import { useState } from "react";
 
-import sendRequest from "../sendRequest";
 import axios from "axios";
-import { AiOutlineCheckCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineFrown } from "react-icons/ai";
 
 export default function Page() {
   const [isLaoding, setIsLoading] = useState(false);
 
-  const [status, setStatus] = useState(200);
+  const [status, setStatus] = useState(null);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -41,14 +40,21 @@ export default function Page() {
         formData
       );
       if (response.status === 200) {
-        setStatus(response.status);
+        setStatus("success");
+      }
+      if (response.status !== 200) {
+        setStatus("fail");
+
+        throw new Error("Something went wrong");
       }
     } catch (error) {
       console.log(error);
+      setStatus("fail");
     } finally {
       setIsLoading(false);
     }
   }
+
   return (
     <PageContainer>
       <section className="mt-[4.6rem] relative">
@@ -59,12 +65,26 @@ export default function Page() {
           </Button>
         </div>
 
-        {status === 200 && (
+        {status === "success" && (
           <div className="absolute inset-0 flex flex-col items-center justify-center w-full top-10">
             <AiOutlineCheckCircle
               width={500}
               height={500}
               className="text-center w-80 h-80 fill-green-500 sucessScaleIn"
+            />
+
+            <h4 className="font-semibold text-center text-slate-100">
+              Your Message has been sent Successfully, <br></br> i will contact
+              you as soon as possible!.<br></br> Regards Navjot
+            </h4>
+          </div>
+        )}
+        {status === "fail" && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center w-full top-10">
+            <AiOutlineFrown
+              width={500}
+              height={500}
+              className="text-center w-80 h-80 fill-red-400 sucessScaleIn"
             />
             <h4 className="font-semibold text-center text-slate-100">
               Your Message has been sent Successfully, <br></br> i will contact
@@ -74,9 +94,14 @@ export default function Page() {
         )}
         <form
           onSubmit={handleSubmit}
-          className={`grid w-full grid-cols-2 gap-5 mt-16 ${
-            status === 200 && "opacity-0" && "invisible"
-          }`}
+          className={`grid w-full grid-cols-2 gap-5 mt-16
+          ${
+            status === "success" || status === "fail"
+              ? "opacity-0 invisible"
+              : ""
+          }
+          
+          `}
         >
           <div>
             <label className="text-secondary-20">Name</label>

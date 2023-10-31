@@ -42,11 +42,11 @@ export const data = [
     image: "/images/project06.jpg",
   },
   {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
+    projectName: "Fast Pizza",
+    builtWith: "React",
+    githubLink: "https://github.com/Navi003/fast-pizza",
+    liveSiteLink: "https://rainbow-trifle-1efc49.netlify.app/",
+    image: "/images/project07.jpg",
   },
   {
     projectName: "Night Drinks",
