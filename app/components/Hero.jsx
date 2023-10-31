@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="pb-6 sm:pb-6 md:pb-0 bg-base-medium ">
       <div className="xl:w-[1200px] md:relative  mx-auto md:grid-cols-2 md:grid fadeIn">
-        <div className="z-50 justify-center hidden w-full gap-3 mb-5 space-x-2 text-5xl font-bold uppercase md:absolute md:bottom-0 md:flex text-primary-60 heroImageBox">
+        <div className="z-50 justify-center hidden w-full gap-3 space-x-2 uppercase lg:mb-5 md:mb-2 md:text-3xl lg:text-6xl sm:font-bold md:absolute md:bottom-0 md:flex text-primary-60 heroImageBox">
           <span className="text-primary-10">Navjot</span>
           <span>Dhiman</span>
         </div>
@@ -22,11 +22,21 @@ export default function Hero() {
           />
         </div>
         <div className="px-4 mt-5 md:col-start-1 md:row-start-1 md:my-auto ">
-          <h1 className="text-3xl font-semibold md:text-3xl lg:text-5xl text-secondary-70 moveLeft">
-            <span>Hi there, I am</span>
-            <span className="text-primary-60 moveRight "> Navjot</span> a
-            Webdevolper and ready to take your websites to
-            <span className="text-primary-60"> next level</span>
+          <h1 className="text-lg font-semibold md:text-2xl lg:text-4xl text-secondary-70 moveLeft">
+            <span className="text-3xl md:text-6xl">
+              <span>Hi there,I'm</span>
+              <span className="text-primary-60 moveRight "> Navjot</span>{" "}
+            </span>
+            <br></br>
+            <p
+              style={{
+                lineHeight: "1.5rem",
+              }}
+              className="mt-4 tracking-wider md:text-lg text-secondary-80"
+            >
+              a dedicated full-stack web developer and designer, creating
+              professional websites and online solutions.
+            </p>
           </h1>
           <div className="flex gap-3 space-x-6 mt-7">
             <Button
