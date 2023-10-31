@@ -8,9 +8,12 @@ import { useState } from "react";
 
 import sendRequest from "../sendRequest";
 import axios from "axios";
+import { AiOutlineCheckCircle } from "react-icons/ai";
 
 export default function Page() {
   const [isLaoding, setIsLoading] = useState(false);
+
+  const [status, setStatus] = useState(200);
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -33,18 +36,13 @@ export default function Page() {
     try {
       setIsLoading(false);
 
-      // const response = await sendRequest({
-      //   url: "http://localhost:3000/api/contact",
-      //   method: "POST",
-      //   body: JSON.stringify(formData),
-      // });
-
-      const response = axios.post(
+      const response = await axios.post(
         "http://localhost:3000/api/contact",
         formData
       );
-
-      console.log(response);
+      if (response.status === 200) {
+        setStatus(response.status);
+      }
     } catch (error) {
       console.log(error);
     } finally {
@@ -53,16 +51,32 @@ export default function Page() {
   }
   return (
     <PageContainer>
-      <section className="mt-[4.6rem]">
+      <section className="mt-[4.6rem] relative">
         <div className="flex items-center justify-between">
           <HeadingSecondary>Contact</HeadingSecondary>
           <Button type="back" href="/" d>
             Go Back
           </Button>
         </div>
+
+        {status === 200 && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center w-full top-10">
+            <AiOutlineCheckCircle
+              width={500}
+              height={500}
+              className="text-center w-80 h-80 fill-green-500 sucessScaleIn"
+            />
+            <h4 className="font-semibold text-center text-slate-100">
+              Your Message has been sent Successfully, <br></br> i will contact
+              you as soon as possible!.<br></br> Regards Navjot
+            </h4>
+          </div>
+        )}
         <form
           onSubmit={handleSubmit}
-          className="grid w-full grid-cols-2 gap-5 mt-16"
+          className={`grid w-full grid-cols-2 gap-5 mt-16 ${
+            status === 200 && "opacity-0" && "invisible"
+          }`}
         >
           <div>
             <label className="text-secondary-20">Name</label>

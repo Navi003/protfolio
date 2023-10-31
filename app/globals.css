@@ -57,7 +57,9 @@
   .moveLeft {
     animation: moveIn 2s;
   }
-
+  .sucessScaleIn {
+    animation: scaleIn 1s;
+  }
   /* .moveRight {
   } */
 
@@ -83,6 +85,20 @@
     }
     100% {
       transform: translateX(0%);
+    }
+  }
+
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
   }
 
