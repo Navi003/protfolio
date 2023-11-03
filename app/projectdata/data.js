@@ -48,69 +48,6 @@ export const data = [
     liveSiteLink: "https://rainbow-trifle-1efc49.netlify.app/",
     image: "/images/project07.jpg",
   },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
-  {
-    projectName: "Night Drinks",
-    builtWith: "React/NodeJS",
-    githubLink: "https://github.com/Navi003/ReactCoursePorject",
-    liveSiteLink: "https://eclectic-clafoutis-d97c8e.netlify.app/",
-    image: "/images/project06.jpg",
-  },
 ];
 
 export const techStackArray = [
@@ -162,6 +99,13 @@ export const techStackArray = [
       "Node.js enables you to build fast and responsive web applications, enhancing user satisfaction with quick loading times and responsiveness.",
     id: "7",
     image: "/images/nodejs.png",
+  },
+  {
+    stack: "SCSS",
+    description:
+      "SCSS is like a designer's magic wand for making websites look great and work seamlessly. It's like the superhero of CSS, making things stylish and easy.",
+    id: "8",
+    image: "/images/scss.svg",
   },
   // Add more objects as needed
 ];

@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
 import TechStack from "./components/TechStack";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Intro />
         <Projects />
         <TechStack />
+        {/* <Services /> */}
       </div>
     </main>
   );

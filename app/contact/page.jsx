@@ -10,7 +10,7 @@ import axios from "axios";
 import { AiOutlineCheckCircle, AiOutlineFrown } from "react-icons/ai";
 
 export default function Page() {
-  const [isLaoding, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const [status, setStatus] = useState(null);
 
@@ -33,7 +33,7 @@ export default function Page() {
     setIsLoading(false);
 
     try {
-      setIsLoading(false);
+      setIsLoading(true);
 
       const response = await axios.post("/api/contact", formData);
       if (response.status === 200) {
@@ -84,8 +84,8 @@ export default function Page() {
               className="text-center w-80 h-80 fill-red-400 sucessScaleIn"
             />
             <h4 className="font-semibold text-center text-slate-100">
-              Your Message has been sent Successfully, <br></br> i will contact
-              you as soon as possible!.<br></br> Regards Navjot
+              Something went wrong, <br></br> Message could not be send Please
+              send me a E-mail<br></br>
             </h4>
           </div>
         )}
@@ -108,6 +108,7 @@ export default function Page() {
               type="text"
               name="firstName"
               required={true}
+              disabled={isLoading}
             />
           </div>
           <div>
@@ -118,6 +119,7 @@ export default function Page() {
               type="text"
               name="lastName"
               required={true}
+              disabled={isLoading}
             />
           </div>
           <div className="col-span-2">
@@ -128,11 +130,13 @@ export default function Page() {
               type="text"
               name="eMail"
               required={true}
+              disabled={isLoading}
             />
           </div>
           <div className="col-span-2">
             <label className="text-secondary-20">Your Text</label>
             <textarea
+              disabled={isLoading}
               className="w-full p-6 mt-4 rounded-md max-h-60 h-60 focus:outline-none focus:ring-4 focus:ring-secondary-60"
               type="text"
               placeholder="Please write me something"
@@ -141,7 +145,7 @@ export default function Page() {
               value={formData.message}
             />
           </div>
-          <Button>Submit</Button>
+          <Button disabled={isLoading}>Submit</Button>
         </form>
       </section>
     </PageContainer>

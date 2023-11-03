@@ -9,6 +9,7 @@ export default function InputField({
   name,
   placeholder,
   value,
+  disabled,
 }) {
   return (
     <input
@@ -21,6 +22,7 @@ export default function InputField({
       defaultValue={defaultValue}
       name={name}
       value={value}
+      disabled={disabled}
     />
   );
 }

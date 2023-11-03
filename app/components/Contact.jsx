@@ -46,16 +46,16 @@ export default function Contact() {
             signifant mind
           </p>
           <div className="flex justify-between mt-7">
-            <div className="flex items-center gap-1">
-              <span className="text-5xl font-bold text-primary-60">56</span>
+            <div className="flex items-center gap-1 leading-tight">
+              <span className="text-5xl font-bold text-primary-60">3</span>
               <span className="text-lg font-bold text-white">
-                Years of exprience
+                Years of <br></br>exprience
               </span>
             </div>
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 leading-tight">
               <span className="text-5xl font-bold text-primary-60">52</span>
               <span className="text-lg font-bold text-white">
-                Satesified Clients
+                Leetcode Problems <br></br> solved
               </span>
             </div>
           </div>
@@ -64,4 +64,3 @@ export default function Contact() {
     </div>
   );
 }
-1;

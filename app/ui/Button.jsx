@@ -19,6 +19,7 @@ export default function Button({
   href,
   onClick,
   type,
+  disabled,
 }) {
   if (type === "tiny" && href) {
     return (
@@ -56,6 +57,7 @@ export default function Button({
 
   return (
     <button
+      disabled={disabled}
       onClick={onClick}
       className={`justify-center ${types.bigSquare} ${className && className}`}
     >
