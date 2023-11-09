@@ -32,9 +32,9 @@ export default function Hero() {
               style={{
                 lineHeight: "1.5rem",
               }}
-              className="mt-4 tracking-wider md:text-lg text-secondary-80"
+              className="mt-4 tracking-wider md:text-lg shine-text"
             >
-              a dedicated full-stack web developer and designer, creating
+              A dedicated full-stack web developer and designer, creating
               professional websites and online solutions.
             </p>
           </h1>

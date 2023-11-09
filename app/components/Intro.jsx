@@ -8,7 +8,7 @@ export default function Intro() {
       <HeadingSecondary>Introduction</HeadingSecondary>
       <div>
         <h4 className="mt-2 text-lg font-bold text-secondary-20">Overview</h4>
-        <p className="text-xs md:text-base text-secondary-10">
+        <p className="text-md md:text-base text-secondary-10">
           I am a skilled software developer with experience in TypeScript and
           JavaScript, and expertise in frameworks like React, Node.js, and
           Three.js. I'm a quick learner and collaborate closely with clients to

@@ -41,7 +41,7 @@ export default function Contact() {
           </a>
         </div>
         <div className="md:basis-[500px]">
-          <p className="text-2xl font-bold text-white">
+          <p className="font-bold text-white text-md md:text-2xl">
             Creativity is a limitless resource; the more you harness and express
             it, the deeper it grows within your meaningful imagination.
           </p>

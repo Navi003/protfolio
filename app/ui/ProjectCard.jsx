@@ -35,7 +35,7 @@ export default function ProjectCard({
             Visit Live
           </Button>
           <Button href={hrefGit || "/"} variant="secondary" type="tiny">
-            Visit git
+            Visit GIT
           </Button>
         </div>
       </div>
