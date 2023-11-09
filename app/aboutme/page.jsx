@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import AppLogo from "../ui/AppLogo";
 
 import { HiDocumentArrowDown } from "react-icons/hi2";
+import { VscArrowSmallLeft } from "react-icons/vsc";
 export default function Page() {
   return (
     <PageContainer>
@@ -23,7 +24,7 @@ export default function Page() {
       >
         <div className="flex items-center justify-between mb-[4.6rem]">
           <HeadingSecondary>About Me</HeadingSecondary>
-          <Button type="back" href="#">
+          <Button type="back" href="/">
             Go back
           </Button>
         </div>

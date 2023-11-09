@@ -31,14 +31,10 @@ export default function ProjectCard({
           <p>built with {builtWith}</p>
         </div>
         <div className="space-x-2">
-          <Button
-            href={hrefLive || "/"}
-            className="bg-primary-60 focus:ring-primary-40 "
-            type="tiny"
-          >
+          <Button href={hrefLive || "/"} variant="primary" type="tiny">
             Visit Live
           </Button>
-          <Button href={hrefGit || "/"} className="bg-secondary-60" type="tiny">
+          <Button href={hrefGit || "/"} variant="secondary" type="tiny">
             Visit git
           </Button>
         </div>

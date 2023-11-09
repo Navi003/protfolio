@@ -7,7 +7,7 @@ export const data = [
     image: "/images/project01.jpg",
   },
   {
-    projectName: "IP Adress Tracker",
+    projectName: "IP Tracker",
     builtWith: "React",
     githubLink: "https://github.com/Navi003/ip-address-tracker-master",
     liveSiteLink: "https://graceful-creponne-ad1156.netlify.app/",

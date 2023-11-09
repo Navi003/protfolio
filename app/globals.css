@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .btn {
+    transition: all 1000ms;
+  }
+
   .line {
     width: 27px;
     background-color: white;

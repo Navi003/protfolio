@@ -42,8 +42,8 @@ export default function Contact() {
         </div>
         <div className="md:basis-[500px]">
           <p className="text-2xl font-bold text-white">
-            You can´t use up creativity, the more you use, more you have in you
-            signifant mind
+            Creativity is a limitless resource; the more you harness and express
+            it, the deeper it grows within your meaningful imagination.
           </p>
           <div className="flex justify-between mt-7">
             <div className="flex items-center gap-1 leading-tight">
