@@ -1,15 +1,12 @@
 "use client";
-import React from "react";
 
-import PageContainer from "../ui/PageContainer";
-import HeadingSecondary from "../ui/HeadingSecondary";
-import Button from "../ui/Button";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import AppLogo from "../ui/AppLogo";
+
+import Button from "../ui/Button";
+import HeadingSecondary from "../ui/HeadingSecondary";
+import PageContainer from "../ui/PageContainer";
 
 import { HiDocumentArrowDown } from "react-icons/hi2";
-import { VscArrowSmallLeft } from "react-icons/vsc";
 export default function Page() {
   return (
     <PageContainer>
@@ -62,13 +59,6 @@ export default function Page() {
             reality!
           </p>
         </article>
-        <div className="flex flex-wrap justify-between mt-10">
-          <AppLogo src="/images/react-2.svg" alt="react logo" />
-          <AppLogo src="/images/javascript.png" alt="JS logo" />
-          <AppLogo src="/images/tailwindcss.svg" alt="tailwindcss logo" />
-          <AppLogo src="/images/nodejs.png" alt="tailwindcss logo" />
-          <AppLogo src="/images/figma.png" alt="figma logo" />
-        </div>
 
         <div className="flex items-center justify-end p-4 mt-10 ">
           <a

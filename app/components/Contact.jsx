@@ -49,7 +49,7 @@ export default function Contact() {
             <div className="flex items-center gap-1 leading-tight">
               <span className="text-5xl font-bold text-primary-60">3</span>
               <span className="text-lg font-bold text-white">
-                Years of <br></br>exprience
+                Years of <br></br>experience
               </span>
             </div>
             <div className="flex items-center gap-1 leading-tight">

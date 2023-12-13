@@ -19,27 +19,23 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <h3 className="mb-5 text-lg font-semibold uppercase ">contact</h3>
+          <h3 className="mt-5 text-lg font-semibold uppercase ">contact</h3>
           <div>
             <div className="space-x-5">
               <span>E-Mail</span>
               <email>dhimannavjot1@gmail.com</email>
             </div>
-            <div className="space-x-5">
-              <span>Phone</span>
-              <phone>+43 162 1653 5681</phone>
-            </div>
           </div>
         </div>
-        <div className="flex flex-col items-center">
-          <h3 className="mb-5 text-lg font-semibold uppercase">Terms</h3>
+        {/* <div className="flex flex-col items-center">
+          <h3 className="mt-5 text-lg font-semibold uppercase">Terms</h3>
           <ul className="flex flex-col items-center">
             <ListItem href="/">Home</ListItem>
             <ListItem href="/projects">Projects</ListItem>
             <ListItem href="/resources">About Me</ListItem>
             <ListItem href="/contact">Contact</ListItem>
           </ul>
-        </div>
+        </div> */}
       </div>
       <PageContainer>
         <div className="flex justify-center mt-10">

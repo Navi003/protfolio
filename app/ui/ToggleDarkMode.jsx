@@ -1,11 +1,6 @@
-import React from "react";
 // import { useState } from "react";
 
-import { useDarkMode } from "../context/DarkModeContext";
-
 export default function ToggleDarkMode() {
-  // const { darkMode, toggleDarkMode } = useDarkMode();
-
   return (
     <div className="absolute z-50 flex items-center top-4 right-4 ">
       <label className="relative cursor-pointer">
