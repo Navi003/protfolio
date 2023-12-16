@@ -6,6 +6,7 @@ export const data = [
     liveSiteLink: "https://thunderous-bienenstitch-b7668f.netlify.app",
     image: "/images/project01.jpg",
   },
+
   {
     projectName: "IP Tracker",
     builtWith: "React",
@@ -47,6 +48,13 @@ export const data = [
     githubLink: "https://github.com/Navi003/fast-pizza",
     liveSiteLink: "https://rainbow-trifle-1efc49.netlify.app/",
     image: "/images/project07.jpg",
+  },
+  {
+    projectName: "Foodies",
+    builtWith: "NextJS",
+    githubLink: "https://github.com/Navi003/meals",
+    liveSiteLink: "https://deft-chebakia-01daa4.netlify.app",
+    image: "/images/project08.jpg",
   },
 ];
 
