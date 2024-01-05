@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 import Button from "../ui/Button";
 import HeadingSecondary from "../ui/HeadingSecondary";
 import PageContainer from "../ui/PageContainer";
@@ -10,15 +8,7 @@ import { HiDocumentArrowDown } from "react-icons/hi2";
 export default function Page() {
   return (
     <PageContainer>
-      <motion.section
-        animate={{
-          opacity: 1,
-        }}
-        initial={{
-          opacity: 0,
-        }}
-        className="mt-[4.6rem]"
-      >
+      <section className="mt-[4.6rem]">
         <div className="flex items-center justify-between mb-[4.6rem]">
           <HeadingSecondary>About Me</HeadingSecondary>
           <Button type="back" href="/">
@@ -74,7 +64,7 @@ export default function Page() {
             />
           </a>
         </div>
-      </motion.section>
+      </section>
     </PageContainer>
   );
 }

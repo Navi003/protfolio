@@ -1,9 +1,7 @@
 "use client";
-import React from "react";
 
 import Image from "next/image";
 import Button from "./Button";
-import { motion } from "framer-motion";
 export default function ProjectCard({
   image,
   name,
@@ -17,8 +15,8 @@ export default function ProjectCard({
         <Image
           className="object-cover w-full h-full rounded-md cardImage"
           src={image}
-          width={200}
-          height={120}
+          width={800}
+          height={600}
           alt={name}
         />
       </div>
