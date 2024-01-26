@@ -56,6 +56,13 @@ export const data = [
     liveSiteLink: "https://deft-chebakia-01daa4.netlify.app",
     image: "/images/project08.jpg",
   },
+  {
+    projectName: "Sushi",
+    builtWith: "NextJS",
+    githubLink: "https://github.com/Navi003/sushi",
+    liveSiteLink: "https://moonlit-muffin-78c25f.netlify.app",
+    image: "/images/project09.jpg",
+  },
 ];
 
 export const techStackArray = [
