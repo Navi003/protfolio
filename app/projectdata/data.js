@@ -61,7 +61,7 @@ export const data = [
     builtWith: "NextJS",
     githubLink: "https://github.com/Navi003/sushi",
     liveSiteLink: "https://moonlit-muffin-78c25f.netlify.app",
-    image: "/images/project09.jpg",
+    image: "/images/project09.png",
   },
 ];
 
