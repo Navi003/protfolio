@@ -15,7 +15,7 @@ export default function RootLayoutS({ children }) {
       <body className="flex flex-col justify-between min-h-screen overflow-x-hidden bg-base-light">
         <Navbar />
         {children}
-        <div className="w-full  bg-base-medium mt-48">
+        <div className="w-full mt-48 bg-base-medium">
           <Footer />
         </div>
       </body>

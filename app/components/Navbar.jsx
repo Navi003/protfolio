@@ -44,6 +44,9 @@ export default function Navbar() {
             <ListItem onClick={() => setShowMobileNav(false)} href="/aboutme">
               About Me
             </ListItem>
+            <ListItem onClick={() => setShowMobileNav(false)} href="/resources">
+              Resources
+            </ListItem>
             <ListItem onClick={() => setShowMobileNav(false)} href="/contact">
               Contact
             </ListItem>
@@ -60,6 +63,7 @@ export default function Navbar() {
           <ListItem href="/">Home</ListItem>
           <ListItem href="/projects">Projects</ListItem>
           <ListItem href="/aboutme">About Me</ListItem>
+          <ListItem href="/resources">Resources</ListItem>
           <ListItem href="/contact">Contact</ListItem>
         </ul>
       </div>
