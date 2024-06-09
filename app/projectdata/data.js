@@ -29,10 +29,10 @@ export const data = [
     image: "/images/project04.jpg",
   },
   {
-    projectName: "Todo",
+    projectName: "Wild Oasis",
     builtWith: "NEXTJS",
-    githubLink: "https://github.com/Navi003/url-shortner-frontendmentor",
-    liveSiteLink: "https://imaginative-chimera-3eaf7a.netlify.app/",
+    githubLink: "https://github.com/Navi003/the-wild-app",
+    liveSiteLink: "https://dreamy-gumption-656ee4.netlify.app/dashboard",
     image: "/images/project05.jpg",
   },
   {
