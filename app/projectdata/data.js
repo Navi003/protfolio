@@ -1,10 +1,10 @@
 export const data = [
   {
-    projectName: "Grid CSS",
-    builtWith: "Vanilla CSS",
-    githubLink: "https://github.com/Navi003/news-homepage-main",
-    liveSiteLink: "https://thunderous-bienenstitch-b7668f.netlify.app",
-    image: "/images/project01.jpg",
+    projectName: "Where in The World",
+    builtWith: "React",
+    githubLink: "https://github.com/Navi003/countriesdata",
+    liveSiteLink: "https://warm-pothos-42b3b1.netlify.app",
+    image: "/images/project01.png",
   },
 
   {
@@ -32,7 +32,7 @@ export const data = [
     projectName: "Wild Oasis",
     builtWith: "NEXTJS",
     githubLink: "https://github.com/Navi003/the-wild-app",
-    liveSiteLink: "https://dreamy-gumption-656ee4.netlify.app/dashboard",
+    liveSiteLink: "https://dreamy-gumption-656ee4.netlify.app/",
     image: "/images/project05.jpg",
   },
   {
