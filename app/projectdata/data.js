@@ -63,6 +63,13 @@ export const data = [
     liveSiteLink: "https://moonlit-muffin-78c25f.netlify.app",
     image: "/images/project09.png",
   },
+  {
+    projectName: "Todo",
+    builtWith: "NextJS",
+    githubLink: "https://github.com/Navi003/todo-frontendmentor",
+    liveSiteLink: "https://splendorous-beijinho-d17890.netlify.app/",
+    image: "/images/project10.png",
+  },
 ];
 
 export const techStackArray = [
