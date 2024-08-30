@@ -70,6 +70,13 @@ export const data = [
     liveSiteLink: "https://splendorous-beijinho-d17890.netlify.app/",
     image: "/images/project10.png",
   },
+  {
+    projectName: "Wild Oasis",
+    builtWith: "NextJS",
+    githubLink: "https://github.com/Navi003/next-app-wild-oasis",
+    liveSiteLink: "https://next-app-wild-oasis.vercel.app/",
+    image: "/images/project11.png",
+  },
 ];
 
 export const techStackArray = [
