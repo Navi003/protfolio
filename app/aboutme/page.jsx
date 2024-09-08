@@ -51,7 +51,7 @@ export default function Page() {
         </article>
 
         <div className="flex items-center justify-end p-4 mt-10 ">
-          <a
+          {/* <a
             className="flex items-center gap-2 px-10 py-3 text-base font-semibold rounded bg-secondary-70 focus:outline-none focus:ring-4 focus:ring-secondary-60"
             href="/data/Navjot_Dhiman_lebenslauf_2023.pdf"
             download
@@ -62,7 +62,7 @@ export default function Page() {
               height={55}
               width={55}
             />
-          </a>
+          </a> */}
         </div>
       </section>
     </PageContainer>
