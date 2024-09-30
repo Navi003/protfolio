@@ -77,6 +77,13 @@ export const data = [
     liveSiteLink: "https://next-app-wild-oasis.vercel.app/",
     image: "/images/project11.png",
   },
+  {
+    projectName: "Dev Links",
+    builtWith: "NextJS",
+    githubLink: "https://github.com/Navi003/dev-links",
+    liveSiteLink: "https://dev-links-beige.vercel.app/",
+    image: "/images/project12.png",
+  },
 ];
 
 export const techStackArray = [

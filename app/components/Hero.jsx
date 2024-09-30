@@ -12,9 +12,9 @@ export default function Hero() {
           <span>Dhiman</span>
         </div>
 
-        <div className="name">
+        <div className=" name">
           <Image
-            className="w-full"
+            className="relative w-full"
             width={400}
             height={650}
             src="/images/navi.png"
